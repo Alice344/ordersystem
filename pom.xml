@@ -13,6 +13,7 @@
         <module>configserver</module>
         <module>order</module>
         <module>menu</module>
+        <module>client</module>
     </modules>
 
     <parent>
@@ -27,17 +28,18 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <version>2.7.0</version>
         </dependency>
 
         <dependency>
             <groupId>com.sun.xml.bind</groupId>
             <artifactId>jaxb-impl</artifactId>
-            <version>2.3.0</version>
+            <version>4.0.0</version>
         </dependency>
         <dependency>
             <groupId>com.sun.xml.bind</groupId>
             <artifactId>jaxb-core</artifactId>
-            <version>2.3.0</version>
+            <version>4.0.0</version>
         </dependency>
         <dependency>
             <groupId>javax.activation</groupId>
@@ -48,7 +50,14 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+            <version>1.18.24</version>
             <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>ga.rugal</groupId>
+            <artifactId>feign-client-generator</artifactId>
+            <version>1.0.0</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 
