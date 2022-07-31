@@ -1,0 +1,24 @@
+server:
+  port: 8040
+spring:
+  application:
+    name: user
+  datasource:
+    name: mysql
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/orderingsystem?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: 19990615
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8765/eureka/
+  instance:
+    prefer-ip-address: true
+mybatis:
+  config-locations: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: com.southwind.entity
+loggin:
+  level:
+    root:debug
